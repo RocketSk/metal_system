@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.system.controller.orderController.DeleteOrderController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="216.0" layoutY="26.0" prefHeight="514.0" prefWidth="665.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите номер заявки для удаления">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="orderIdField" promptText="ID">
+                    <VBox.margin>
+                        <Insets left="40.0" right="40.0" top="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#searchById" text="Поиск">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Button>
+                <ListView fx:id="orderListView" prefHeight="424.0" prefWidth="585.0">
+                    <VBox.margin>
+                        <Insets left="40.0" right="40.0" top="10.0"/>
+                    </VBox.margin>
+                </ListView>
+                <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#deleteOrder" text="Удалить">
+                            <HBox.margin>
+                                <Insets right="10.0" top="10.0"/>
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#cancel" text="Отмена">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

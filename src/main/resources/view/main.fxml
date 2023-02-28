@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0"
+            prefWidth="878.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.system.controller.mainController.MainController">
+    <children>
+        <TabPane layoutX="82.0" layoutY="39.0" prefHeight="577.0" prefWidth="878.0" tabClosingPolicy="UNAVAILABLE"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Продукция">
+                    <content>
+                        <fx:include source="../view/product/mainProductTab.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Группы продуктов">
+                    <content>
+                        <fx:include source="../view/productGroup/mainProductGroupTab.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Клиенты">
+                    <fx:include source="../view/customer/mainCustomerTab.fxml"/>
+                </Tab>
+                <Tab text="Компания">
+                    <fx:include source="../view/company/companyTab.fxml"/>
+                </Tab>
+                <Tab text="Продажи">
+                    <fx:include source="../view/order/orderMainTab.fxml"/>
+                </Tab>
+                <Tab text="Отчеты">
+                    <fx:include source="../view/print/printMainTab.fxml"/>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

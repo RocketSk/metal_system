@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.system.controller.companyController.CompanyTabController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="313.0" layoutY="122.0" prefHeight="545.2" prefWidth="786.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#updateCompany" text="Изменить данные">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Название нашего юр. лица : " />
+                        <Text fx:id="companyName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="46.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Наш номер телефона : " />
+                        <Text fx:id="companyPhone" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="146.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Наш адрес : " />
+                        <Text fx:id="companyAddress" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="246.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Наш УНП : " />
+                        <Text fx:id="companyInn" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="346.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Наш рассчетный счет : " />
+                        <Text fx:id="companyIban" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

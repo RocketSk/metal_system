@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.system.controller.companyController.UpdateCompanyController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="109.0" layoutY="116.0" prefHeight="431.0" prefWidth="519.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <Text layoutX="182.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Номер телефона компании">
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="companyPhoneField" layoutX="10.0" layoutY="159.0" promptText="Телефон">
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <Text layoutX="200.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адрес">
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="companyAddressField" layoutX="110.0" layoutY="454.0" promptText="Адрес">
+                    <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <Text layoutX="182.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УНП/ИНН">
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="companyINNField" layoutX="10.0" layoutY="201.0" promptText="УНП/ИНН">
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <Text layoutX="182.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Рассчетный счет">
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="companyIbanField" layoutX="10.0" layoutY="243.0" promptText="Номер счета">
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#updateCompany" text="Изменить">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#Cancel" text="Отмена">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

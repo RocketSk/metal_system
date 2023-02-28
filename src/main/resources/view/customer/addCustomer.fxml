@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.system.controller.customerController.AddCustomerController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="109.0" layoutY="116.0" prefHeight="431.0" prefWidth="519.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text layoutX="182.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите название фирмы">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="customerNameField" layoutX="110.0" layoutY="46.0" promptText="Название">
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Text layoutX="182.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите номер телефона компании">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="customerPhoneField" layoutX="10.0" layoutY="159.0" promptText="Номер телефона">
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Text layoutX="200.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите адрес">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Text>
+                <HBox alignment="TOP_CENTER">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Город" />
+                                <TextField fx:id="customerAddressCityField" />
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Улица" />
+                                <TextField fx:id="customerAddressStreetField" />
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дом" />
+                                <TextField fx:id="customerAddressHouseField" />
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Индекс" />
+                                <TextField fx:id="customerAddressPostField" />
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <Text layoutX="182.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="УНП/ИНН">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="customerINNField" layoutX="10.0" layoutY="201.0" promptText="УНП/ИНН">
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Text layoutX="182.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите рассчетный счет">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="customerIbanField" layoutX="10.0" layoutY="243.0" promptText="Рассчетный счет">
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#addCustomer" text="Добавить клиента">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#Cancel" text="Отмена">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

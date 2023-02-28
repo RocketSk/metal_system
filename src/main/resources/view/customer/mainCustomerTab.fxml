@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.system.controller.customerController.MainCustomerTabController">
+    <children>
+        <VBox layoutX="-28.0" layoutY="98.0" prefHeight="534.0" prefWidth="917.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="1069.0">
+                    <children>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCustomer" prefHeight="30.0" prefWidth="120.0" text="Добавить">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="30.0" prefWidth="120.0" text="Редактировать">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="30.0" prefWidth="120.0" text="Удалить">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                  <Button layoutX="281.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#findCustomer" prefHeight="30.0" prefWidth="120.0" text="Поиск">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                        <HBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="334.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#updateTableView" prefHeight="30.0" prefWidth="130.0" text="Обновить таблицу">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <TableView fx:id="customerTableView">
+                    <columns>
+                        <TableColumn fx:id="customerIdColumn" prefWidth="37.0" text="№" />
+                        <TableColumn fx:id="customerNameColumn" prefWidth="148.0" text="Название" />
+                  <TableColumn fx:id="customerPhoneColumn" prefWidth="140.0" text="Номер телефона" />
+                  <TableColumn fx:id="customerAddressColumn" prefWidth="314.0" text="Адрес" />
+                  <TableColumn fx:id="customerINNColumn" prefWidth="211.0" text="УНП/ИНН" />
+                  <TableColumn fx:id="customerIbanColumn" prefWidth="224.0" text="Рассчетный счет" />
+                    </columns>
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+                </TableView>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
