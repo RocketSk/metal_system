@@ -27,5 +27,4 @@ public class SoldProduct {
 
     @Column(name = "COUNT")
     private Integer count;
-
 }
